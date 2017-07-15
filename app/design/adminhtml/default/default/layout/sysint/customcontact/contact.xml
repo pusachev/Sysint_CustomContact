@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_customcontact_contact_index>
+        <reference name="content">
+            <block type="sysint_customcontact/adminhtml_contact" name="contact.grid_container"/>
+        </reference>
+    </adminhtml_customcontact_contact_index>
+
+    <adminhtml_customcontact_contact_new>
+        <update handle="adminhtml_customcontact_edit"/>
+    </adminhtml_customcontact_contact_new>
+
+    <adminhtml_customcontact_contact_edit>
+        <reference name="content">
+            <block type="sysint_customcontact/adminhtml_contact_edit" name="contact.edit"/>
+        </reference>
+        <reference name="left">
+            <block type="sysint_customcontact/adminhtml_contact_edit_tabs" name="contact.tabs" />
+        </reference>
+    </adminhtml_customcontact_contact_edit>
+
+    <adminhtml_customcontact_status_index>
+        <reference name="content">
+            <block type="sysint_customcontact/adminhtml_status" name="status.grid_container"/>
+        </reference>
+    </adminhtml_customcontact_status_index>
+
+    <adminhtml_customcontact_status_new>
+        <update handle="adminhtml_customcontact_status_edit"/>
+    </adminhtml_customcontact_status_new>
+
+    <adminhtml_customcontact_status_edit>
+        <reference name="content">
+            <block type="sysint_customcontact/adminhtml_status_edit" name="status.edit"/>
+        </reference>
+        <reference name="left">
+            <block type="sysint_customcontact/adminhtml_status_edit_tabs" name="status.tabs" />
+        </reference>
+    </adminhtml_customcontact_status_edit>
+</layout>

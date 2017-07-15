@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sysint_CustomContact>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Sysint_CustomContact>
+    </modules>
+</config>

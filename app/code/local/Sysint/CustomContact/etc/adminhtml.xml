@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sysint_customcontact translate="title" module="sysint_customcontact">
+            <title>Sysint CustomContact</title>
+            <sort_order>10</sort_order>
+            <action>adminhtml/system_config/edit/section/trans_email</action>
+            <children>
+                <sysint_customcontact_grid translate="title" module="sysint_customcontact">
+                    <title>Contact</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/customcontact_contact</action>
+                </sysint_customcontact_grid>
+                <sysint_customcontact_status_grid translate="title" module="sysint_customcontact">
+                    <title>Contact status</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/customcontact_status</action>
+                </sysint_customcontact_status_grid>
+                <sysint_customcontact_config translate="title" module="sysint_customcontact">
+                    <title>Config</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/system_config/edit/section/trans_email</action>
+                </sysint_customcontact_config>
+            </children>
+        </sysint_customcontact>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <sysint_customcontact translate="title" module="sysint_customcontact">
+                                        <title>CustomContact</title>
+                                        <sort_order>0</sort_order>
+                                    </sysint_customcontact>
+                                    <sysint_customcontact_grid translate="title" module="sysint_customcontact">
+                                        <title>CustomContact Grid</title>
+                                        <sort_order>1</sort_order>
+                                    </sysint_customcontact_grid>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
